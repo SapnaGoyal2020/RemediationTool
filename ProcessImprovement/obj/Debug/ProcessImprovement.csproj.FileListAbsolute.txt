@@ -4,3 +4,10 @@ S:\TCS Project\SG-Project\ASPVulnerableLab-master\ProcessImprovement\bin\Process
 S:\TCS Project\SG-Project\ASPVulnerableLab-master\ProcessImprovement\obj\Debug\ProcessImprovement.csproj.CoreCompileInputs.cache
 S:\TCS Project\SG-Project\ASPVulnerableLab-master\ProcessImprovement\obj\Debug\ProcessImprovement.dll
 S:\TCS Project\SG-Project\ASPVulnerableLab-master\ProcessImprovement\obj\Debug\ProcessImprovement.pdb
+S:\TCS Project\SG-Project\ProcessImprovement\ProcessImprovement\bin\ProcessImprovement.dll.config
+S:\TCS Project\SG-Project\ProcessImprovement\ProcessImprovement\bin\ProcessImprovement.dll
+S:\TCS Project\SG-Project\ProcessImprovement\ProcessImprovement\bin\ProcessImprovement.pdb
+S:\TCS Project\SG-Project\ProcessImprovement\ProcessImprovement\obj\Debug\ProcessImprovement.csproj.CoreCompileInputs.cache
+S:\TCS Project\SG-Project\ProcessImprovement\ProcessImprovement\obj\Debug\ProcessImprovement.dll
+S:\TCS Project\SG-Project\ProcessImprovement\ProcessImprovement\obj\Debug\ProcessImprovement.pdb
+S:\TCS Project\SG-Project\ProcessImprovement\ProcessImprovement\obj\Debug\ProcessImprovement.csprojAssemblyReference.cache

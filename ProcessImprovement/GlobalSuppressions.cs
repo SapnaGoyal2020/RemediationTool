@@ -1,0 +1,36 @@
+﻿
+// This file is used by Code Analysis to maintain SuppressMessage 
+// attributes that are applied to this project.
+// Project-level suppressions either have no target or are given 
+// a specific target and scoped to a namespace, type, member, etc.
+
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "SCS0029:Potential XSS vulnerability", Justification = "<Pending>", Scope = "member", Target = "~M:ASPVulnerableLab.ErrorPage.DisplayError")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "SCS0029:Potential XSS vulnerability", Justification = "<Pending>", Scope = "member", Target = "~M:ASPVulnerableLab.ErrorPage.DisplayError_Fixed")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "SCS0026:MsSQL Data Provider: SQL injection possible in 1st argument passed to 'new SqlCommand'", Justification = "<Pending>", Scope = "member", Target = "~M:ProcessImprovement.Account.ChangePassword.ChangePasswordAction")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "SCS0026:MsSQL Data Provider: SQL injection possible in 1st argument passed to 'new SqlCommand'", Justification = "<Pending>", Scope = "member", Target = "~M:ProcessImprovement.Account.ChangePasswordFixed.ChangePasswordAction")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "SCS0026:MsSQL Data Provider: SQL injection possible in 1st argument passed to 'new SqlCommand'", Justification = "<Pending>", Scope = "member", Target = "~M:ProcessImprovement.Account.EditSecret.ChangeSecretButton_Click(System.Object,System.EventArgs)")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "SCS0026:MsSQL Data Provider: SQL injection possible in 1st argument passed to 'new SqlCommand'", Justification = "<Pending>", Scope = "member", Target = "~M:ProcessImprovement.Account.Login.DoLogin")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "SCS0026:MsSQL Data Provider: SQL injection possible in 1st argument passed to 'new SqlCommand'", Justification = "<Pending>", Scope = "member", Target = "~M:ProcessImprovement.Account.Login.DoLogin_BCrypt")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "SCS0027:Open redirect: possibly unvalidated input in 1st argument passed to 'Response.Redirect'", Justification = "<Pending>", Scope = "member", Target = "~M:ProcessImprovement.Account.Login.RedirectionAfterLogin")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "SCS0027:Open redirect: possibly unvalidated input in 1st argument passed to 'Response.Redirect'", Justification = "<Pending>", Scope = "member", Target = "~M:ProcessImprovement.Account.Login.RedirectionAfterLogin_Fixed")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "SCS0026:MsSQL Data Provider: SQL injection possible in 1st argument passed to 'new SqlCommand'", Justification = "<Pending>", Scope = "member", Target = "~M:ProcessImprovement.Account.Register.RegisterAction")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "SCS0026:MsSQL Data Provider: SQL injection possible in 1st argument passed to 'new SqlCommand'", Justification = "<Pending>", Scope = "member", Target = "~M:ProcessImprovement.Account.Register.RegisterAction_Bcrypt")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "SCS0026:MsSQL Data Provider: SQL injection possible in 1st argument passed to 'new SqlCommand'", Justification = "<Pending>", Scope = "member", Target = "~M:ProcessImprovement.Application.EditTitle.EditTitleAction")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "SCS0026:MsSQL Data Provider: SQL injection possible in 1st argument passed to 'new SqlCommand'", Justification = "<Pending>", Scope = "member", Target = "~M:ProcessImprovement.Posts.View.Display_Posts")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "SCS0029:Potential XSS vulnerability", Justification = "<Pending>", Scope = "member", Target = "~M:ProcessImprovement.Posts.View.Display_Posts")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2237:MarkISerializableTypesWithSerializable", Scope = "type", Target = "BCrypt.Net.SaltParseException")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2100:Review SQL queries for security vulnerabilities", Scope = "member", Target = "ProcessImprovement.Account.ChangePassword.#ChangePasswordAction()")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2100:Review SQL queries for security vulnerabilities", Scope = "member", Target = "ProcessImprovement.Account.ChangePasswordFixed.#ChangePasswordAction()")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2100:Review SQL queries for security vulnerabilities", Scope = "member", Target = "ProcessImprovement.Account.EditSecret.#ChangeSecretButton_Click(System.Object,System.EventArgs)")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2100:Review SQL queries for security vulnerabilities", Scope = "member", Target = "ProcessImprovement.Account.EditSecret.#DisplayCurrentSecret()")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2100:Review SQL queries for security vulnerabilities", Scope = "member", Target = "ProcessImprovement.Account.Login.#DoLogin()")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2100:Review SQL queries for security vulnerabilities", Scope = "member", Target = "ProcessImprovement.Account.Login.#DoLogin_BCrypt()")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2100:Review SQL queries for security vulnerabilities", Scope = "member", Target = "ProcessImprovement.Account.Register.#RegisterAction()")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2100:Review SQL queries for security vulnerabilities", Scope = "member", Target = "ProcessImprovement.Account.Register.#RegisterAction_Bcrypt()")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2100:Review SQL queries for security vulnerabilities", Scope = "member", Target = "ProcessImprovement.Application.EditTitle.#EditTitleAction()")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2100:Review SQL queries for security vulnerabilities", Scope = "member", Target = "ProcessImprovement.Posts.View.#Display_Posts()")]
+
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Security", "SCS0021:Request validation has been disabled in {0}({1}): {2}", Justification = "<Pending>")]
+
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Security", "SCS0023:View state is not encrypted in {0}({1}): {2}", Justification = "<Pending>")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0017:Simplify object initialization", Justification = "<Pending>", Scope = "member", Target = "~M:ProcessImprovement.Account.ChangePasswordFixed.ChangePasswordAction")]

@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Diagnostics.CodeAnalysis;
 namespace ProcessImprovement.Account
 {
     public partial class ChangePassword : System.Web.UI.Page
