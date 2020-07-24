@@ -22,6 +22,7 @@ namespace ProcessImprovement.Account
             this.ChangePasswordAction();
         }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2000:Dispose objects before losing scope")]
         protected void ChangePasswordAction() 
         {
             StringBuilder html = new StringBuilder();

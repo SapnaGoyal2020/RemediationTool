@@ -76,7 +76,9 @@ namespace ProcessImprovement.Account
                     accountId.Value = Request.QueryString["account_id"];
                     cmd.Parameters.Add(accountId);
 
+#pragma warning disable IDE0017 // Simplify object initialization
                     SqlParameter usernameParam = new SqlParameter("username", SqlDbType.NVarChar);
+#pragma warning restore IDE0017 // Simplify object initialization
                     usernameParam.Value = Session["username"].ToString();
                     cmd.Parameters.Add(usernameParam);
 

@@ -16,6 +16,7 @@ namespace ProcessImprovement.Vulnerabilities.SDE
             //DisplayPage_Fixed();
         }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2000:Dispose objects before losing scope")]
         protected void DisplayPage()
         {
             StringBuilder html = new StringBuilder();
