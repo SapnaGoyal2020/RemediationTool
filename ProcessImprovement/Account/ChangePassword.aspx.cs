@@ -31,7 +31,7 @@ namespace ProcessImprovement.Account
                 {
                     int user_id = (Int32)Session["user_id"];
                     string updSql = @"UPDATE users SET password = '" + NewPassword.Text + "' where id=" + user_id;
-                    using (var cmd = new SqlCommand(updSql, conn))
+                    using (SqlCommand cmd = new SqlCommand(cmdText: updSql, connection: conn))
                     {
                         if (cmd.ExecuteNonQuery() > 0)
                         {

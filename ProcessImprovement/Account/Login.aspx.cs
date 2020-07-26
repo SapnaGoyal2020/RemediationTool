@@ -8,13 +8,23 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Web.Configuration;
 
 namespace ProcessImprovement.Account
 {
     public partial class Login : System.Web.UI.Page
     {
+        private const string V = @" select * from users where username='";
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Helps to open the Root level web.config file.
+            Configuration webConfigApp = WebConfigurationManager.OpenWebConfiguration("~");
+            //Modifying the AppKey from AppValue to AppValue1
+            //webConfigApp.GetSection().AppSettings.Settings["AppKey"].Value = "AppValue1";
+
+            //Save the Modified settings of AppSettings.
+            webConfigApp.Save();
 
         }
 
@@ -34,8 +44,10 @@ namespace ProcessImprovement.Account
             {
                 conn.Open();
 
-                using (var cmd = new SqlCommand(@" select * from users where username='" + Username.Text + "' ", conn))
+                const string V1 = @" select * from users where username=@username";
+                using (SqlCommand cmd = new SqlCommand(cmdText: V1, connection: conn))
                 {
+                    cmd.Parameters.AddWithValue("username", Username.Text);
                     SqlDataReader dr = cmd.ExecuteReader();
                     if (dr.HasRows && dr.Read())
                     {
@@ -78,7 +90,7 @@ namespace ProcessImprovement.Account
             {
                 conn.Open();
 
-                using (var cmd = new SqlCommand(@" select * from users where username='" + Username.Text + "' ", conn))
+                using (var cmd = new SqlCommand(V + Username.Text + "' ", conn))
                 {
                     SqlDataReader dr = cmd.ExecuteReader();
                     if(dr.HasRows && dr.Read())

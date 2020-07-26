@@ -1,0 +1,5 @@
+https://docs.microsoft.com/en-us/visualstudio/ide/code-styles-and-code-cleanup?view=vs-2019
+https://www.codeproject.com/Articles/18625/Top-10-Application-Security-Vulnerabilities-in-Web
+
+Webconfig link important: 
+https://www.codechef4u.com/post/2015/07/12/Security-Vulnerabilities-in-Webconfig

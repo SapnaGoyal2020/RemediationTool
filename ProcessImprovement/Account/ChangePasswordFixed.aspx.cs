@@ -58,7 +58,7 @@ namespace ProcessImprovement.Account
                 {
                     
                     string updSql = @"UPDATE users SET password = '" + NewPassword.Text + "' where id=" + user_id;
-                    using (var cmd = new SqlCommand(updSql, conn))
+                    using (SqlCommand cmd = new SqlCommand(updSql, conn))
                     {
                         if (cmd.ExecuteNonQuery() > 0)
                         {

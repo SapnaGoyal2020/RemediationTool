@@ -33,7 +33,8 @@ namespace ProcessImprovement.Posts
                 conn.Open();
 
                 //Vulnerable - Direct user input - Dynamic Query
-                SqlCommand cmd = new SqlCommand("SELECT title,content FROM Posts where id=" + userInput, conn);
+                SqlCommand sqlCommand = new SqlCommand("SELECT title,content FROM Posts where id=" + userInput, conn);
+                SqlCommand cmd = sqlCommand;
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     if (reader.Read())
@@ -45,7 +46,9 @@ namespace ProcessImprovement.Posts
 
             }
 
+#pragma warning disable SCS0029 // Potential XSS vulnerability
             PostsPlace.Controls.Add(new Literal { Text = html.ToString() });
+#pragma warning restore SCS0029 // Potential XSS vulnerability
         }
 
         protected void Display_Posts_Fixed()
