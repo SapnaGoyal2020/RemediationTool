@@ -10,3 +10,4 @@ S:\TCS Project\SG-Project\ProcessImprovement\ProcessImprovement\bin\ProcessImpro
 S:\TCS Project\SG-Project\ProcessImprovement\ProcessImprovement\obj\Debug\ProcessImprovement.csproj.CoreCompileInputs.cache
 S:\TCS Project\SG-Project\ProcessImprovement\ProcessImprovement\obj\Debug\ProcessImprovement.dll
 S:\TCS Project\SG-Project\ProcessImprovement\ProcessImprovement\obj\Debug\ProcessImprovement.pdb
+S:\TCS Project\SG-Project\ProcessImprovement\ProcessImprovement\obj\Debug\ProcessImprovement.csprojAssemblyReference.cache

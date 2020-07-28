@@ -1,0 +1,7 @@
+S:\TCS Project\SG-Project\ProcessImprovement\WebConfigUpdater\bin\Debug\WebConfigUpdater.exe.config
+S:\TCS Project\SG-Project\ProcessImprovement\WebConfigUpdater\bin\Debug\WebConfigUpdater.exe
+S:\TCS Project\SG-Project\ProcessImprovement\WebConfigUpdater\bin\Debug\WebConfigUpdater.pdb
+S:\TCS Project\SG-Project\ProcessImprovement\WebConfigUpdater\obj\Debug\WebConfigUpdater.csproj.CoreCompileInputs.cache
+S:\TCS Project\SG-Project\ProcessImprovement\WebConfigUpdater\obj\Debug\WebConfigUpdater.exe
+S:\TCS Project\SG-Project\ProcessImprovement\WebConfigUpdater\obj\Debug\WebConfigUpdater.pdb
+S:\TCS Project\SG-Project\ProcessImprovement\WebConfigUpdater\obj\Debug\WebConfigUpdater.csprojAssemblyReference.cache

@@ -192,6 +192,10 @@
     <Content Include="SiteMaster.Master" />
     <Content Include="images\Thumbs.db" />
     <Content Include="BCrypt.Net\bcrypt.snk" />
+    <Content Include="images\Web.config" />
+    <None Include="images\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <Content Include="ProcessImprovement.ruleset" />
     <Content Include="ProcessImprovement1.ruleset" />
