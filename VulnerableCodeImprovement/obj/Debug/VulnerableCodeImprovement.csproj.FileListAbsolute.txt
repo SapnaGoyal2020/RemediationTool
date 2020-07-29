@@ -1,0 +1,9 @@
+S:\TCS Project\SG-Project\ProcessImprovement\VulnerableCodeImprovement\bin\Debug\VulnerableCodeImprovement.exe.config
+S:\TCS Project\SG-Project\ProcessImprovement\VulnerableCodeImprovement\bin\Debug\VulnerableCodeImprovement.exe
+S:\TCS Project\SG-Project\ProcessImprovement\VulnerableCodeImprovement\bin\Debug\VulnerableCodeImprovement.pdb
+S:\TCS Project\SG-Project\ProcessImprovement\VulnerableCodeImprovement\obj\Debug\VulnerableCodeImprovement.Properties.Resources.resources
+S:\TCS Project\SG-Project\ProcessImprovement\VulnerableCodeImprovement\obj\Debug\VulnerableCodeImprovement.csproj.GenerateResource.cache
+S:\TCS Project\SG-Project\ProcessImprovement\VulnerableCodeImprovement\obj\Debug\VulnerableCodeImprovement.csproj.CoreCompileInputs.cache
+S:\TCS Project\SG-Project\ProcessImprovement\VulnerableCodeImprovement\obj\Debug\VulnerableCodeImprovement.exe
+S:\TCS Project\SG-Project\ProcessImprovement\VulnerableCodeImprovement\obj\Debug\VulnerableCodeImprovement.pdb
+S:\TCS Project\SG-Project\ProcessImprovement\VulnerableCodeImprovement\obj\Debug\VulnerableCodeImprovement.WebConfigUpdater.resources
