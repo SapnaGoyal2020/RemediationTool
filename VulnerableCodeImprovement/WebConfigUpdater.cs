@@ -75,6 +75,87 @@ namespace VulnerableCodeImprovement
                     itemElement.SetAttributeValue("validateRequest", "true");
                 }
 
+                #region compilation
+                // Update Element value  
+                var items_compilation = from item in xmlDoc.Descendants("compilation")
+                           // where item.Attribute("debug").Value == "true"
+                            select item;
+                if (items_compilation != null && items_compilation.Count() > 0)
+                {
+                    foreach (XElement itemElement in items_compilation)
+                    {
+                        itemElement.SetAttributeValue("debug","false");
+                    }
+                }
+                else
+                {
+                    // Option2: Using Add() method 
+                   // XDocument doc = XDocument.Parse(tempXml);
+                    XElement root = new XElement("compilation");
+                    root.Add(new XAttribute("debug", "false"));
+                    root.Add(new XAttribute("targetFramework", "4.5"));
+                    xmlDoc.Element("configuration").Element("system.web").Add(root);
+                    //doc.Save(Console.Out);
+
+                }
+
+                #endregion
+
+                #region requireSSL
+                // Update Element value  
+                var items_httpCookies = from item in xmlDoc.Descendants("httpCookies")
+                                            // where item.Attribute("debug").Value == "true"
+                                        select item;
+                if (items_httpCookies != null && items_httpCookies.Count() > 0)
+                {
+                    foreach (XElement itemElement in items_httpCookies)
+                    {
+                        itemElement.SetAttributeValue("requireSSL", "true");
+                    }
+                }
+                else
+                {
+                    // Option2: Using Add() method 
+                    // XDocument doc = XDocument.Parse(tempXml);
+                    XElement root = new XElement("httpCookies");
+                    root.Add(new XAttribute("requireSSL", "true"));
+                    root.Add(new XAttribute("httpOnlyCookies", "true"));
+                    xmlDoc.Element("configuration").Element("system.web").Add(root);
+                    //doc.Save(Console.Out);
+
+                }
+
+                #endregion
+
+                #region httpProtocol-Strict-Transport-Security
+                // Update Element value  
+                var items_httpProtocol_hsts = from item in xmlDoc.Descendants("httpProtocol")
+                                            // where item.Attribute("debug").Value == "true"
+                                        select item;
+                if (items_httpProtocol_hsts != null && items_httpProtocol_hsts.Count() > 0)
+                {
+                    foreach (XElement itemElement in items_httpCookies)
+                    {
+                        itemElement.SetAttributeValue("requireSSL", "true");
+                    }
+                }
+                else
+                {
+                    // Option2: Using Add() method 
+                    // XDocument doc = XDocument.Parse(tempXml);
+                    XElement root = new XElement("add");
+                    XElement parent_root = new XElement("httpProtocol", new XElement("customHeaders", root));
+                   
+                    
+                   root.Add(new XAttribute("name", "Strict-Transport-Security"));
+                    root.Add(new XAttribute("value", "max-age=31536000"));
+                    xmlDoc.Element("configuration").Element("system.webServer").Add(parent_root);
+                    //doc.Save(Console.Out);
+
+                }
+
+                #endregion
+
                 xmlDoc.Save(objfilepath);
                 webConfigProgressBar.Minimum = 0;
                 webConfigProgressBar.Maximum = totalcount;

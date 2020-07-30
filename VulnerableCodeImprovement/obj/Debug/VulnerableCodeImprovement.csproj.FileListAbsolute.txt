@@ -7,3 +7,4 @@ S:\TCS Project\SG-Project\ProcessImprovement\VulnerableCodeImprovement\obj\Debug
 S:\TCS Project\SG-Project\ProcessImprovement\VulnerableCodeImprovement\obj\Debug\VulnerableCodeImprovement.exe
 S:\TCS Project\SG-Project\ProcessImprovement\VulnerableCodeImprovement\obj\Debug\VulnerableCodeImprovement.pdb
 S:\TCS Project\SG-Project\ProcessImprovement\VulnerableCodeImprovement\obj\Debug\VulnerableCodeImprovement.WebConfigUpdater.resources
+S:\TCS Project\SG-Project\ProcessImprovement\VulnerableCodeImprovement\obj\Debug\VulnerableCodeImprovement.csprojAssemblyReference.cache
