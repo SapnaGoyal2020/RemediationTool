@@ -65,6 +65,8 @@ namespace VulnerableCodeImprovement
             {
                 // Option1: Using SetAttributeValue()
                 XDocument xmlDoc = XDocument.Load(objfilepath);
+
+                #region validateRequest
                 // Update Element value  
                 var items = from item in xmlDoc.Descendants("pages")
                             where item.Attribute("validateRequest").Value == "false"
@@ -74,6 +76,7 @@ namespace VulnerableCodeImprovement
                 {
                     itemElement.SetAttributeValue("validateRequest", "true");
                 }
+                #endregion
 
                 #region compilation
                 // Update Element value  
@@ -150,6 +153,83 @@ namespace VulnerableCodeImprovement
                    root.Add(new XAttribute("name", "Strict-Transport-Security"));
                     root.Add(new XAttribute("value", "max-age=31536000"));
                     xmlDoc.Element("configuration").Element("system.webServer").Add(parent_root);
+                    //doc.Save(Console.Out);
+
+                }
+
+                #endregion
+
+                #region traceenabled 
+                // Update Element value  
+                var items_traceenabled = from item in xmlDoc.Descendants("trace")
+                                            // where item.Attribute("debug").Value == "true"
+                                        select item;
+                if (items_traceenabled != null && items_traceenabled.Count() > 0)
+                {
+                    foreach (XElement itemElement in items_traceenabled)
+                    {
+                        itemElement.SetAttributeValue("enabled", "false");
+                    }
+                }
+                else
+                {
+                    // Option2: Using Add() method 
+                    // XDocument doc = XDocument.Parse(tempXml);
+                    XElement root = new XElement("trace");
+                    root.Add(new XAttribute("enabled", "false"));
+                    root.Add(new XAttribute("localOnly", "true"));
+                    xmlDoc.Element("configuration").Element("system.web").Add(root);
+                    //doc.Save(Console.Out);
+
+                }
+
+                #endregion
+
+                #region sessionState 
+                // Update Element value  
+                var items_sessionState = from item in xmlDoc.Descendants("sessionState")
+                                             // where item.Attribute("debug").Value == "true"
+                                         select item;
+                if (items_sessionState != null && items_sessionState.Count() > 0)
+                {
+                    foreach (XElement itemElement in items_sessionState)
+                    {
+                        itemElement.SetAttributeValue("cookieless", "UseCookies");
+                    }
+                }
+                else
+                {
+                    // Option2: Using Add() method 
+                   
+                    XElement root = new XElement("sessionState");
+                    root.Add(new XAttribute("cookieless", "UseCookies"));
+                    xmlDoc.Element("configuration").Element("system.web").Add(root);
+                    //doc.Save(Console.Out);
+
+                }
+
+                #endregion
+
+                #region customErrors 
+                // Update Element value  
+                var items_customErrors = from item in xmlDoc.Descendants("customErrors")
+                                             // where item.Attribute("debug").Value == "true"
+                                         select item;
+                if (items_customErrors != null && items_customErrors.Count() > 0)
+                {
+                    foreach (XElement itemElement in items_customErrors)
+                    {
+                        itemElement.SetAttributeValue("mode", "RemoteOnly");
+                    }
+                }
+                else
+                {
+                    // Option2: Using Add() method 
+                    // XDocument doc = XDocument.Parse(tempXml);
+                    XElement root = new XElement("customErrors");
+                    root.Add(new XAttribute("mode", "RemoteOnly"));
+                    root.Add(new XAttribute("defaultRedirect", "YourErrorPage.htm"));
+                    xmlDoc.Element("configuration").Element("system.web").Add(root);
                     //doc.Save(Console.Out);
 
                 }
